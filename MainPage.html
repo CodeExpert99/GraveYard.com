@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Site</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="sec">
+      <header class="head">
+        <img src="tree-left.png" id="tree_left" />
+        <img src="tree-right.png" id="tree_right" />
+        <h1 id="logo">logo</h1>
+        <div class="divnavi">
+          <a class="navi" id="a1" href="">Home</a>
+          <a class="navi" href="">Services</a>
+          <a class="navi" href="">Gate</a>
+          <a class="navi" href="">About us</a>
+        </div>
+      </header>
+      <h1 id="txt">Let's Begin</h1>
+      <img src="gate-left.png" id="Gate_left" />
+      <img src="gate-right.png" id="Gate_right" />
+      <img src="grass.png" id="Grass" />
+    </section>
+
+    <section class="detail">
+      <h2>This is a Website.</h2>
+      <p class="Paragraphs">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis
+        consequatur architecto ipsum provident voluptate nostrum ipsam
+        aspernatur, expedita iure odit aliquid earum delectus in nesciunt
+        obcaecati minima vero, quos amet reprehenderit corrupti maxime
+        blanditiis quam facilis. Nesciunt numquam ipsam, nihil, in vero voluptas
+        itaque suscipit nemo molestias atque nobis natus similique quis ducimus
+        dolore magnam qui sapiente ipsa voluptate explicabo aperiam, reiciendis
+        quod? Perspiciatis porro quibusdam earum necessitatibus rerum voluptatum
+        nobis officia, corrupti voluptates, doloribus consequatur minima.
+        Veritatis itaque delectus eius non corporis magni sunt atque natus
+        dolore exercitationem quis.
+      </p>
+      <p class="Paragraphs">
+        a doloribus odit eveniet nulla saepe quia minima doloremque quisquam
+        aliquid facere provident quas! Repellendus eius et perferendis maxime
+        soluta nemo, libero earum quia, sunt nulla nam, cumque mollitia
+        voluptate amet suscipit laudantium ea voluptatem ab obcaecati quae a
+        quis facilis maiores. Quos beatae tempore ratione nam asperiores
+        corporis nulla quisquam esse? Earum voluptatum similique distinctio
+        nostrum nesciunt porro odit incidunt quas debitis pariatur velit,
+        commodi qui, autem officiis laboriosam quos molestias maxime praesentium
+        tempora! Labore voluptas voluptates quaerat aspernatur quidem in quos.
+      </p>
+      <p class="Paragraphs">
+        optio dicta, est omnis doloribus aliquam perspiciatis quisquam non quod
+        commodi mollitia animi accusantium iusto? Ducimus facere, repudiandae,
+        sed praesentium rem provident labore, non quis voluptate odio ea. Dolore
+        eligendi tempora blanditiis et, praesentium molestias quidem dolor id
+        adipisci recusandae necessitatibus ad, voluptatum reiciendis, nisi
+        asperiores ut. Quia, dolore maxime? Beatae totam veniam recusandae saepe
+        quidem corporis fugit eveniet deserunt ea aspernatur at laud Lorem ipsum
+        dolor, sit amet consectetur adipisicing elit. Eveniet est, voluptas
+        obcaecati voluptates dolores perspiciatis, alias quidem eaque modi
+        laboriosam praesentium! Doloremque aliquam quasi perspiciatis incidunt!
+      </p>
+      <p class="Paragraphs">
+        Ducimus, in? Facilis odio reiciendis quidem dolor. Voluptatum
+        consequatur officia fugiat quas eligendi molestias ut possimus!
+        Officiis, nobis rem. Aspernatur, dolorum! Totam adipisci quisquam
+        nesciunt quaerat. Quas nostrum quod aspernatur, sequi ea voluptates
+        dignissimos sed rerum commodi dolores ut quia ipsam doloribus nulla
+        blanditiis in. Impedit maxime, eum, ducimus consequuntur at dolorem cum
+        accusamus sequi temporibus cumque maiores quidem eligendi quas totam
+        animi suscipit. Temporibus asperiores numquam excepturi, assumenda nobis
+        debitis provident vitae blanditiis id recusandae et sunt, maiores cum
+        est explicabo modi! Eum, sit perspiciatis? Nihil reprehenderit eius odit
+        cum cumque corrupti nesciunt mollitia porro et temporibus ducimus
+        sapiente quam, rerum delectus aperiam sed nostrum officia perspiciatis
+        tenetur illo doloremque? Repudiandae cumque consequatur illo incidunt
+        voluptates.
+      </p>
+      <p class="Paragraphs">
+        tenetur magnam non temporibus sunt provident blanditiis optio natus
+        pariatur laudantium laboriosam inventore at facere nemo quasi quis quas.
+        Nisi dolorum eum doloremque tenetur. quos autem delectus sed voluptates
+        voluptatem nesciunt est officiis placeat necessitatibus vitae eligendi
+        iusto eius incidunt inventore ad saepe atque? Amet numquam ab non animi
+        consequatur dicta autem nemo fugiat nam excepturi ipsam tempora
+        recusandae dolorum iusto deleniti dolores laudantium quisquam ducimus,
+        similique dignissimos et illo sed eveniet! Ex labore nisi repellendus
+        quisquam dolores possimus ad harum eligendi minima non! Vel voluptates
+        a, iste quae excepturi.
+      </p>
+    </section>
+    <script>
+      let text = document.getElementById("txt");
+      let treeLeft = document.getElementById("tree_left");
+      let treeRight = document.getElementById("tree_right");
+      let gateLeft = document.getElementById("Gate_left");
+      let gateRight = document.getElementById("Gate_right");
+
+      window.addEventListener("scroll", () => {
+        let value = window.scrollY;
+        text.style.marginTop = value * 1.25 + "px";
+        treeLeft.style.left = value * -0.2 + "px";
+        treeRight.style.left = value * 0.2 + "px";
+        gateLeft.style.left = value * -1.0 + "px";
+        gateRight.style.left = value * 1.0 + "px";
+      });
+    </script>
+  </body>
+</html>
